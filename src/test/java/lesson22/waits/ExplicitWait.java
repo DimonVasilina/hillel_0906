@@ -29,9 +29,7 @@ public class ExplicitWait {
     @Test
     public void testExplicitExample2() throws InterruptedException {
         driver.get("https://rozetka.com.ua/");
-        WebElement laptops = (new WebDriverWait(driver, Duration.ofSeconds(5000))).
-                until(ExpectedConditions.elementToBeClickable
-                        (By.xpath("//a[@class='menu-categories__link' and starts-with(text(), 'Ноут')]")));
+        WebElement laptops = (new WebDriverWait(driver, Duration.ofSeconds(5000))).until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-categories__link' and starts-with(text(), 'Ноут')]")));
         laptops.click();
         sleep(5000);
     }
@@ -39,9 +37,7 @@ public class ExplicitWait {
     @Test
     public void testExplicitExample() throws InterruptedException {
         driver.get("https://rozetka.com.ua/");
-        WebElement laptops = webDriverWait.until
-                (ExpectedConditions.elementToBeClickable
-                        (By.xpath("//a[@class='menu-categories__link' and starts-with(text(), 'Ноут')]")));
+        WebElement laptops = webDriverWait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-categories__link' and starts-with(text(), 'Ноут')]")));
         laptops.click();
         sleep(5000);
     }
