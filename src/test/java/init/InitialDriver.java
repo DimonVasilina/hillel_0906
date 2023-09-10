@@ -17,17 +17,17 @@ public class InitialDriver {
 
     @BeforeTest
     public void setupDriver() {
-//        WebDriverManager.chromedriver().setup();
-//        driver = new ChromeDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
 
-        WebDriverManager.firefoxdriver().setup();
-        driver = new FirefoxDriver();
+//        WebDriverManager.firefoxdriver().setup();
+//        driver = new FirefoxDriver();
         webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(5000));
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
     }
-    @AfterTest
-    public void driverQuit() {
-        driver.quit();
-    }
+//    @AfterTest
+//    public void driverQuit() {
+//        driver.quit();
+//    }
 
 }
