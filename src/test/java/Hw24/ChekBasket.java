@@ -31,11 +31,22 @@ public class ChekBasket extends InitialDriver{
             Assert.assertEquals(basketCount, "1", "counter is not equals 1");
             WebElement basketButton = driver.findElement(By.xpath("//rz-cart//button"));
             basketButton.click();
+            List<WebElement> elements = driver.findElements(By.xpath("//a[@data-testid='title']"));
+            int countProductCards = elements.size();
+            int basketCountInt = Integer.valueOf(basketCount);
+            if (countProductCards != basketCountInt){
+                Assert.fail("Product`s count in the basket isn`t equal to have chosen count");
+            }
             WebElement itemTitleInBasket = driver.findElement(By.xpath("//a[@data-testid='title']"));
             String titleProductInBasket = itemTitleInBasket.getText();
-
+            WebElement itemCountInTheBasket = driver
+                    .findElement(By.xpath("//input[@formcontrolname='quantity']"));
+            String countInTheBasket = itemCountInTheBasket.getAttribute("value");
+            int intCountInTheBasket = Integer.valueOf(countInTheBasket);
             Assert
                     .assertEquals(titleText,titleProductInBasket
                             , "Product title in the basket different from choosen Product title");
+            Assert.assertEquals(basketCountInt,intCountInTheBasket
+                    , "Product`s count in the basket isn`t equal to have chosen count");
         }
     }
