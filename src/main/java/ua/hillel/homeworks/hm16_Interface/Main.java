@@ -1,7 +1,9 @@
-package ua.hillel.homeworks.hm16;
+package ua.hillel.homeworks.hm16_Interface;
 
 public class Main {
-    /*
+
+
+
     public static void main(String[] args) {
 
         // Создание объектов и вызов методов для проверки
@@ -18,5 +20,6 @@ public class Main {
         // expected: Поездка на велосипеде Giant началась. У велосипеда 2 педали.
         // expected: Поездка на велосипеде Giant завершена.
     }
- */
+
+
 }

@@ -16,7 +16,20 @@ public class Test {
         }
         System.out.flush();
 
+
+        int firstVariable = 7;
+        int secondVariable = 8;
+        System.out.println(firstVariable + secondVariable);
+
+
+        int alex = 7;
+        int maks = 9;
+        int sumAM = alex + ++maks;
+        System.out.println(sumAM);
+        int aMSum = alex + maks++;
+        System.out.println(aMSum);
     }
+
 }
 
 
