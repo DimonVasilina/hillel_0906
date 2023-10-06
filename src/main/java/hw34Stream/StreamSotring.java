@@ -3,8 +3,6 @@ package hw34Stream;
 import java.util.stream.Collectors;
 
 public class StreamSotring {
-
-
     public static void main(String[] args) {
         String eng = "ealgbkjdfvbjkhfdkbljvd";
         sortedLetters(eng);
@@ -17,7 +15,6 @@ public class StreamSotring {
                 .sorted()
                 .map(String::valueOf)
                 .collect(Collectors.joining());
-
         System.out.println(sortedLetters);
     }
 }
