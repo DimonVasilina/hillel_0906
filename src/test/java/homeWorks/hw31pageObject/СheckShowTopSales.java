@@ -1,6 +1,6 @@
-package homeWorks.hw32;
+package homeWorks.hw31pageObject;
 
-import hw32.*;
+import hw31_32.*;
 import init.InitialDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;

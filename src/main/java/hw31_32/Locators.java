@@ -1,4 +1,4 @@
-package hw32;
+package hw31_32;
 
 import org.openqa.selenium.By;
 
