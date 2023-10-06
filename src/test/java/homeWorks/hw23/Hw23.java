@@ -1,4 +1,4 @@
-package ua.hillel.homeworks.hw23;
+package homeWorks.hw23;
 
 
 import org.openqa.selenium.By;

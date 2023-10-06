@@ -1,4 +1,4 @@
-package ua.hillel.homeworks.hw27;
+package homeWorks.hw27;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

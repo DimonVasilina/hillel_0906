@@ -1,4 +1,4 @@
-package ua.hillel.homeworks.hw24;
+package homeWorks.hw24;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
