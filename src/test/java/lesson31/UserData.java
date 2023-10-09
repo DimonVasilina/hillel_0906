@@ -8,8 +8,8 @@ public class UserData {
     private String last_name;
     private String avatar;
 
-    public UserData() {
-    }
+
+
 
     public UserData(Integer id, String email, String first_name, String last_name, String avatar) {
         this.id = id;
@@ -17,6 +17,7 @@ public class UserData {
         this.first_name = first_name;
         this.last_name = last_name;
         this.avatar = avatar;
+
     }
 
     public Integer getId() {
@@ -58,4 +59,5 @@ public class UserData {
     public void setAvatar(String avatar) {
         this.avatar = avatar;
     }
+
 }

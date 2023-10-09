@@ -2,6 +2,8 @@ package lesson31;
 
 public class UserForReg {
 
+    String name;
+    String job;
     String email;
     String password;
 
@@ -30,4 +32,5 @@ public class UserForReg {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }
